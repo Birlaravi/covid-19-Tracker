@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+* {
+  margin: 0%;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(242, 227, 227);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.app_left {
+  flex: 0.8;
+}
+.app__header {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.app__header > h1 {
+  font-size: 3rem;
+  color: rgb(218, 65, 65);
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
 }
 
-.App-link {
-  color: #61dafb;
+.app_dropdown {
+  background-color: rgb(212, 184, 184);
 }
+.app_infoBox {
+  display: flex;
+  justify-content: space-between;
+}
+.chartjs-render-monitor {
+  margin-top: 5px;
+  height: 180px !important;
+}
+.app_right {
+  /* width: 500px; */
+  border-radius: 15px !important;
+}
+/* .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.app_right.css-bhp9pd-MuiPaper-root-MuiCard-root {
+  background: black;
+  color: #d82b55;
+} */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1110px) {
+  .app {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 430px) {
+  .app__header > h1 {
+    font-size: 1.5rem;
+  }
+  .app_infoBox {
+    flex-direction: column;
+    /* margin: 10px; */
+  }
+  .app_infoBox div {
+    margin: 5px 10px 5px 10px;
+  }
+  .app_right {
+    margin-top: 20px;
+    border-radius: 205px;
+    width: auto;
   }
 }

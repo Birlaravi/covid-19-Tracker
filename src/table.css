@@ -1,0 +1,17 @@
+.table {
+  margin: 10px;
+  height:400px;
+  overflow: scroll;
+}
+.table::-webkit-scrollbar {
+    display: none;
+  }
+.table > tr {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(87, 84, 84);
+  padding:10px;
+}
+.table tr:nth-of-type(odd){
+  background-color: rgba(192, 200, 201, 0.249);
+}
